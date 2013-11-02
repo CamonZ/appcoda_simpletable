@@ -39,11 +39,18 @@
   return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
   UIAlertView *messageAlert = [[UIAlertView alloc]
-                               initWithTitle:@"Row Selected" message:@"You've Selected a Row"
+                               initWithTitle:@"Row Selected" message:[tableData objectAtIndex:indexPath.row]
                                 delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
   [messageAlert show];
+  UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+  cell.accessoryType = UITableViewCellAccessoryCheckmark;
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+  UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+  cell.accessoryType = UITableViewCellAccessoryNone;
 }
 
 - (void)viewDidLoad{
