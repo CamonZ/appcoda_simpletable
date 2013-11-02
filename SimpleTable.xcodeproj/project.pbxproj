@@ -21,6 +21,7 @@
 		D7670B1A182432E7008349C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7670AFC182432E7008349C2 /* UIKit.framework */; };
 		D7670B22182432E7008349C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7670B20182432E7008349C2 /* InfoPlist.strings */; };
 		D7670B24182432E7008349C2 /* SimpleTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7670B23182432E7008349C2 /* SimpleTableTests.m */; };
+		D79719C01825C2F2002AB9EB /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = D79719BF1825C2F2002AB9EB /* recipes.plist */; };
 		D7A50ED4182560BD008EF5B3 /* hamburger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7A50EC4182560BD008EF5B3 /* hamburger.jpg */; };
 		D7A50ED5182560BD008EF5B3 /* ham_and_cheese_panini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7A50EC5182560BD008EF5B3 /* ham_and_cheese_panini.jpg */; };
 		D7A50ED6182560BD008EF5B3 /* egg_benedict.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7A50EC6182560BD008EF5B3 /* egg_benedict.jpg */; };
@@ -71,6 +72,7 @@
 		D7670B1F182432E7008349C2 /* SimpleTableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTableTests-Info.plist"; sourceTree = "<group>"; };
 		D7670B21182432E7008349C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7670B23182432E7008349C2 /* SimpleTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableTests.m; sourceTree = "<group>"; };
+		D79719BF1825C2F2002AB9EB /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 		D7A50EC4182560BD008EF5B3 /* hamburger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hamburger.jpg; sourceTree = "<group>"; };
 		D7A50EC5182560BD008EF5B3 /* ham_and_cheese_panini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ham_and_cheese_panini.jpg; sourceTree = "<group>"; };
 		D7A50EC6182560BD008EF5B3 /* egg_benedict.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = egg_benedict.jpg; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		D7670AFE182432E7008349C2 /* SimpleTable */ = {
 			isa = PBXGroup;
 			children = (
+				D79719BF1825C2F2002AB9EB /* recipes.plist */,
 				D7A50EC4182560BD008EF5B3 /* hamburger.jpg */,
 				D7A50EC5182560BD008EF5B3 /* ham_and_cheese_panini.jpg */,
 				D7A50EC6182560BD008EF5B3 /* egg_benedict.jpg */,
@@ -293,6 +296,7 @@
 				D7A50ED7182560BD008EF5B3 /* starbucks_coffee.jpg in Resources */,
 				D7A50EE51825620A008EF5B3 /* SimpleTableCell.xib in Resources */,
 				D7A50EE0182560BD008EF5B3 /* full_breakfast.jpg in Resources */,
+				D79719C01825C2F2002AB9EB /* recipes.plist in Resources */,
 				D7A50ED9182560BD008EF5B3 /* vegetable_curry.jpg in Resources */,
 				D7670B11182432E7008349C2 /* Images.xcassets in Resources */,
 				D7A50EE1182560BD008EF5B3 /* green_tea.jpg in Resources */,
