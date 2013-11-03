@@ -8,6 +8,7 @@
 
 #import "SimpleTableViewController.h"
 #import "SimpleTableCell.h"
+#import "RecipeDetailViewController.h"
 
 @interface SimpleTableViewController ()
 
@@ -18,6 +19,8 @@
   NSMutableArray *thumbnails;
   NSMutableArray *prepTimes;
 }
+
+@synthesize tableView;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
   return [tableData count];
@@ -45,6 +48,17 @@
   [prepTimes removeObjectAtIndex:indexPath.row];
   [tableView reloadData];
 }
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+  if([segue.identifier isEqualToString:@"showRecipeDetail"]){
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    RecipeDetailViewController *destViewController = segue.destinationViewController;
+    destViewController.recipeName = [tableData objectAtIndex:indexPath.row];
+  }
+}
+
+
 
 - (void)viewDidLoad{
   [super viewDidLoad];

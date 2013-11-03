@@ -24,6 +24,7 @@
 		D79719C01825C2F2002AB9EB /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = D79719BF1825C2F2002AB9EB /* recipes.plist */; };
 		D79719C318266B99002AB9EB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D79719C118266B99002AB9EB /* Default.png */; };
 		D79719C418266B99002AB9EB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79719C218266B99002AB9EB /* Default@2x.png */; };
+		D79719C71826FEF6002AB9EB /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79719C61826FEF6002AB9EB /* RecipeDetailViewController.m */; };
 		D7A50ED4182560BD008EF5B3 /* hamburger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7A50EC4182560BD008EF5B3 /* hamburger.jpg */; };
 		D7A50ED5182560BD008EF5B3 /* ham_and_cheese_panini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7A50EC5182560BD008EF5B3 /* ham_and_cheese_panini.jpg */; };
 		D7A50ED6182560BD008EF5B3 /* egg_benedict.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7A50EC6182560BD008EF5B3 /* egg_benedict.jpg */; };
@@ -77,6 +78,8 @@
 		D79719BF1825C2F2002AB9EB /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 		D79719C118266B99002AB9EB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D79719C218266B99002AB9EB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D79719C51826FEF6002AB9EB /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
+		D79719C61826FEF6002AB9EB /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 		D7A50EC4182560BD008EF5B3 /* hamburger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hamburger.jpg; sourceTree = "<group>"; };
 		D7A50EC5182560BD008EF5B3 /* ham_and_cheese_panini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ham_and_cheese_panini.jpg; sourceTree = "<group>"; };
 		D7A50EC6182560BD008EF5B3 /* egg_benedict.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = egg_benedict.jpg; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				D7A50EE41825620A008EF5B3 /* SimpleTableCell.xib */,
 				D7A50EE61825645D008EF5B3 /* SimpleTableCell.h */,
 				D7A50EE71825645D008EF5B3 /* SimpleTableCell.m */,
+				D79719C51826FEF6002AB9EB /* RecipeDetailViewController.h */,
+				D79719C61826FEF6002AB9EB /* RecipeDetailViewController.m */,
 			);
 			path = SimpleTable;
 			sourceTree = "<group>";
@@ -339,6 +344,7 @@
 				D7670B09182432E7008349C2 /* SimpleTableAppDelegate.m in Sources */,
 				D7A50EE81825645D008EF5B3 /* SimpleTableCell.m in Sources */,
 				D7670B0F182432E7008349C2 /* SimpleTableViewController.m in Sources */,
+				D79719C71826FEF6002AB9EB /* RecipeDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

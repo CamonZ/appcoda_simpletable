@@ -58,7 +58,7 @@
                                             <outlet property="nameLabel" destination="NMM-46-QhD" id="Mpl-tN-mq4"/>
                                             <outlet property="prepTimeLabel" destination="Aay-fb-dJf" id="9sp-oY-DFP"/>
                                             <outlet property="thumbnailImageView" destination="Y9k-Z6-5fJ" id="jl5-80-E57"/>
-                                            <segue destination="8wq-ms-rNc" kind="push" id="Qcb-sc-4NS"/>
+                                            <segue destination="8wq-ms-rNc" kind="push" identifier="showRecipeDetail" id="Qcb-sc-4NS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -72,14 +72,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="jrL-eC-haM"/>
+                    <connections>
+                        <outlet property="tableView" destination="VHg-YB-IZm" id="NNF-gC-U4d"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="6" y="345"/>
         </scene>
-        <!--View Controller-->
+        <!--Recipe Detail View Controller-->
         <scene sceneID="IO6-re-tbC">
             <objects>
-                <viewController id="8wq-ms-rNc" sceneMemberID="viewController">
+                <viewController id="8wq-ms-rNc" customClass="RecipeDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xXM-yY-uLk"/>
                         <viewControllerLayoutGuide type="bottom" id="JVy-Ml-dBY"/>
@@ -99,6 +102,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="r8d-GS-lnP"/>
+                    <connections>
+                        <outlet property="recipeLabel" destination="XrX-LE-r5o" id="DAP-o5-jKn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJU-wG-fCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
