@@ -22,6 +22,8 @@
 		D7670B22182432E7008349C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7670B20182432E7008349C2 /* InfoPlist.strings */; };
 		D7670B24182432E7008349C2 /* SimpleTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7670B23182432E7008349C2 /* SimpleTableTests.m */; };
 		D79719C01825C2F2002AB9EB /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = D79719BF1825C2F2002AB9EB /* recipes.plist */; };
+		D79719C318266B99002AB9EB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D79719C118266B99002AB9EB /* Default.png */; };
+		D79719C418266B99002AB9EB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79719C218266B99002AB9EB /* Default@2x.png */; };
 		D7A50ED4182560BD008EF5B3 /* hamburger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7A50EC4182560BD008EF5B3 /* hamburger.jpg */; };
 		D7A50ED5182560BD008EF5B3 /* ham_and_cheese_panini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7A50EC5182560BD008EF5B3 /* ham_and_cheese_panini.jpg */; };
 		D7A50ED6182560BD008EF5B3 /* egg_benedict.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7A50EC6182560BD008EF5B3 /* egg_benedict.jpg */; };
@@ -73,6 +75,8 @@
 		D7670B21182432E7008349C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7670B23182432E7008349C2 /* SimpleTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableTests.m; sourceTree = "<group>"; };
 		D79719BF1825C2F2002AB9EB /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
+		D79719C118266B99002AB9EB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D79719C218266B99002AB9EB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D7A50EC4182560BD008EF5B3 /* hamburger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hamburger.jpg; sourceTree = "<group>"; };
 		D7A50EC5182560BD008EF5B3 /* ham_and_cheese_panini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ham_and_cheese_panini.jpg; sourceTree = "<group>"; };
 		D7A50EC6182560BD008EF5B3 /* egg_benedict.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = egg_benedict.jpg; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 		D7670AFE182432E7008349C2 /* SimpleTable */ = {
 			isa = PBXGroup;
 			children = (
+				D79719C118266B99002AB9EB /* Default.png */,
+				D79719C218266B99002AB9EB /* Default@2x.png */,
 				D79719BF1825C2F2002AB9EB /* recipes.plist */,
 				D7A50EC4182560BD008EF5B3 /* hamburger.jpg */,
 				D7A50EC5182560BD008EF5B3 /* ham_and_cheese_panini.jpg */,
@@ -294,6 +300,7 @@
 				D7A50ED8182560BD008EF5B3 /* japanese_noodle_with_pork.jpg in Resources */,
 				D7A50EDA182560BD008EF5B3 /* mushroom_risotto.jpg in Resources */,
 				D7A50ED7182560BD008EF5B3 /* starbucks_coffee.jpg in Resources */,
+				D79719C418266B99002AB9EB /* Default@2x.png in Resources */,
 				D7A50EE51825620A008EF5B3 /* SimpleTableCell.xib in Resources */,
 				D7A50EE0182560BD008EF5B3 /* full_breakfast.jpg in Resources */,
 				D79719C01825C2F2002AB9EB /* recipes.plist in Resources */,
@@ -309,6 +316,7 @@
 				D7670B0C182432E7008349C2 /* Main.storyboard in Resources */,
 				D7A50EDC182560BD008EF5B3 /* thai_shrimp_cake.jpg in Resources */,
 				D7A50ED6182560BD008EF5B3 /* egg_benedict.jpg in Resources */,
+				D79719C318266B99002AB9EB /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -446,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -460,7 +468,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleTable/SimpleTable-Prefix.pch";
 				INFOPLIST_FILE = "SimpleTable/SimpleTable-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -473,7 +483,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleTable/SimpleTable-Prefix.pch";
 				INFOPLIST_FILE = "SimpleTable/SimpleTable-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
