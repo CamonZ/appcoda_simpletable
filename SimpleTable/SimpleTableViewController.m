@@ -14,9 +14,9 @@
 @end
 
 @implementation SimpleTableViewController{
-  NSArray *tableData;
-  NSArray *thumbnails;
-  NSArray *prepTimes;
+  NSMutableArray *tableData;
+  NSMutableArray *thumbnails;
+  NSMutableArray *prepTimes;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -53,6 +53,13 @@
   cell.accessoryType = UITableViewCellAccessoryNone;
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+  [tableData removeObjectAtIndex:indexPath.row];
+  [thumbnails removeObjectAtIndex:indexPath.row];
+  [prepTimes removeObjectAtIndex:indexPath.row];
+  [tableView reloadData];
+}
+
 - (void)viewDidLoad{
   [super viewDidLoad];
 	// Initialize table data
@@ -61,9 +68,9 @@
   
   NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
   
-  tableData = [dict objectForKey:@"RecipeName"];
-  thumbnails = [dict objectForKey:@"Thumbnail"];
-  prepTimes = [dict objectForKey:@"PrepTime"];
+  tableData = [[NSMutableArray alloc] initWithArray:[dict objectForKey:@"RecipeName"]];
+  thumbnails = [[NSMutableArray alloc] initWithArray:[dict objectForKey:@"Thumbnail"]];
+  prepTimes = [[NSMutableArray alloc] initWithArray:[dict objectForKey:@"PrepTime"]];
 }
 
 - (void)didReceiveMemoryWarning{
