@@ -23,8 +23,8 @@
   return [tableData count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
   static NSString *simpleTableIdentifier = @"SimpleTableCell";
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
   SimpleTableCell *cell = (SimpleTableCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
   
   if(cell == nil){
@@ -37,20 +37,6 @@
   cell.imageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
   cell.prepTimeLabel.text = [prepTimes objectAtIndex:indexPath.row];
   return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-  UIAlertView *messageAlert = [[UIAlertView alloc]
-                               initWithTitle:@"Row Selected" message:[tableData objectAtIndex:indexPath.row]
-                                delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-  [messageAlert show];
-  UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-  cell.accessoryType = UITableViewCellAccessoryCheckmark;
-}
-
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
-  UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-  cell.accessoryType = UITableViewCellAccessoryNone;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
